@@ -1,4 +1,4 @@
-# Turning Website into native mobile (Android) app using Ionic Capacitor
+# Turning Website into native mobile (Android) app using Ionic Capacitor (https://capacitorjs.com/)
 
 This repository contains the configurations necessary to turn my personal web page (https://github.com/di0g0a1v3s/personal-website) into a native Android app using the <b>Capacitor</b> framework by Ionic.
 
