@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="theme-color" content="#000000">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.svg">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>Diogo Alves</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.9.2/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.9.2/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.9.2/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+  </head>
+  <body>
+    
+    <svg style="display: none"  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" class="iconify iconify--emojione-monotone" preserveAspectRatio="xMidYMid meet">
+      <defs>
+        <symbol id="site-logo" viewBox="0 0 491.52 491.52" style="enable-background:new 0 0 491.52 491.52;" >
+          <g>
+            <g>
+              <path fill="#FFFFFF" d="M491.52,399.36V20.48H0v378.88h153.6v51.2h-40.96v20.48h266.24v-20.48h-40.96v-51.2H491.52z M20.48,40.96h450.56v276.48
+                H20.48V40.96z M317.44,450.56H174.08v-51.2h143.36V450.56z M20.48,378.88v-40.96h450.56v40.96H20.48z"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="307.2" y="61.44" width="133.12" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="235.52" y="61.44" width="51.2" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="194.56" y="61.44" width="20.48" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="153.6" y="61.44" width="20.48" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="317.44" y="215.04" width="122.88" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="276.48" y="215.04" width="20.48" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="235.52" y="215.04" width="20.48" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="337.92" y="163.84" width="102.4" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="194.56" y="163.84" width="122.88" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="225.28" y="112.64" width="40.96" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF" x="286.72" y="112.64" width="153.6" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF"  x="51.2" y="112.64" width="153.6" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <rect fill="#FFFFFF"  x="245.76" y="266.24" width="194.56" height="20.48"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <polygon fill="#FFFFFF" points="176.2,202.68 161.72,217.16 190.32,245.76 161.72,274.36 176.2,288.84 219.28,245.76 		"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              <polygon fill="#FFFFFF" points="94.28,217.16 79.8,202.68 36.72,245.76 79.8,288.84 94.28,274.36 65.68,245.76 		"/>
+            </g>
+          </g>
+          <g>
+            <g>
+              
+                <rect fill="#FFFFFF" x="72.86" y="235.538" transform="matrix(0.3711 -0.9286 0.9286 0.3711 -147.7282 273.431)" width="110.281" height="20.48"/>
+            </g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+          <g>
+          </g>
+        </symbol>
+      </defs>
+      <use href="#site-logo"/>
+    </svg>
+  
+    
+    <noscript>
+      You need to enable JavaScript to run this app.
+    </noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
+</html>

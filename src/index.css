@@ -1,0 +1,235 @@
+body {
+  padding-top: 108px;
+  margin: 0;
+  font-family: Consolas, andale mono, monospace, Inter, sans-serif, Trebuchet MS;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.nav-bar-button {
+  height: 100%;
+  width: 100%;
+}
+
+.nav-bar-button {
+  width: 100%;
+}
+
+.corner-image {
+  max-height: 75px;
+  width: 100px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  z-index: 1;
+}
+
+#circle-corner {
+  height: 120px;
+  width: 120px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: translate(50%, -50%);
+  z-index: 1;
+  -webkit-border-radius: 60px;
+  -moz-border-radius: 60px;
+  border-radius: 60px;
+  background: white;
+  border: 1px solid black;
+}
+
+.footnote-icon {
+  font-size: 2rem;
+}
+
+.footnote-icon:hover {
+  color: #000;
+}
+
+.title-format {
+  background-image: linear-gradient(
+    180deg,
+    rgb(141, 137, 137) 0%,
+    rgb(0, 0, 0) 100%
+  );
+  color: transparent !important;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+p,
+a,
+span,
+span b,
+button,
+.btn,
+.badge,
+strong {
+  font-size: 19px;
+}
+
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.scrolled-down {
+  transform: translateY(-100%);
+  transition: all 0.3s ease-in-out;
+}
+.scrolled-up {
+  transform: translateY(0);
+  transition: all 0.3s ease-in-out;
+}
+
+.animation-zoom-out {
+  animation-name: zoomOut;
+  animation-duration: 0.7s;
+}
+
+.animation-move-from-left {
+  animation-name: move-from-left;
+  animation-duration: 0.7s;
+}
+
+.animation-move-from-right {
+  animation-name: move-from-right;
+  animation-duration: 0.7s;
+}
+
+.animation-move-from-bottom {
+  animation-name: move-from-bottom;
+  animation-duration: 0.7s;
+}
+
+@keyframes move-from-left {
+  from {
+    -webkit-transform: translateX(-1000px);
+    -moz-transform: translateX(-1000px);
+    -ms-transform: translateX(-1000px);
+    -o-transform: translateX(-1000px);
+    transform: translate(-1000px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes move-from-bottom {
+  from {
+    -webkit-transform: translateY(1000px);
+    -moz-transform: translateY(1000px);
+    -ms-transform: translateY(1000px);
+    -o-transform: translateY(1000px);
+    transform: translateY(1000px);
+  }
+  to {
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+@keyframes move-from-right {
+  from {
+    -webkit-transform: translateX(1000px);
+    -moz-transform: translateX(1000px);
+    -ms-transform: translateX(1000px);
+    -o-transform: translateX(1000px);
+    transform: translate(1000px);
+  }
+  to {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    width: 120%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.animation-fade-in {
+  -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 2s; /* Firefox < 16 */
+  -ms-animation: fadein 2s; /* Internet Explorer */
+  -o-animation: fadein 2s; /* Opera < 12.1 */
+  animation: fadein 2s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
