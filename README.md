@@ -16,9 +16,9 @@ Build React App
 
 Sync build with android folder
 
-## npx cap open android
+### npx cap open android
 
 Build android app (need to have android studio installed).
 This will open Android Studio with this project. Go to Build -> Generate signed Bundle/Apk -> APK -> Release
 
-## The .apk should be in the folder android/app/build/outputs/apk/release
+### The .apk should be in the folder android/app/build/outputs/apk/release
